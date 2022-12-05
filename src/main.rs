@@ -1,4 +1,4 @@
-// #![windows_subsystem = "windows"]
+#![windows_subsystem = "windows"]
 
 use rand::Rng;
 
@@ -6,13 +6,13 @@ use raylib::prelude::*;
 
 use std::collections::VecDeque;
 
-const FRAME_TIME: f32 = 0.25;
-const TILE_SIZE: i32 = 32;
+const FRAME_TIME: f32 = 0.1;
+const TILE_SIZE: i32 = 20;
 const SNAKE_COLOR: Color = Color::GREEN;
 const TAIL_COLOR: Color = Color::DARKGREEN;
 const APPLE_COLOR: Color = Color::RED;
 const ROOM_SIZE_X: i32 = 20;
-const ROOM_SIZE_Y: i32 = 16;
+const ROOM_SIZE_Y: i32 = 20;
 const WINDOW_WIDTH: i32 = ROOM_SIZE_X * TILE_SIZE;
 const WINDOW_HEIGHT: i32 = ROOM_SIZE_Y * TILE_SIZE;
 
